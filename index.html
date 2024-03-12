@@ -3,7 +3,22 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>San Joaquin Valley Town Hall</title>
+
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+
+
+
+
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
@@ -16,6 +31,19 @@
 			<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 		</div>
 	</header>
+
+	<nav id="mobilemenu"></nav>
+
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="speakers.html">Speakers</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
+			<li><a href="luncheons.html">Luncheons</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</nav>
+
 	<main>
 		<section>
 			<h2>Our Mission</h2>
